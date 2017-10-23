@@ -41,8 +41,13 @@ class ElectricCar(Car):
     """Deriving electric car from Car"""
 
     def __init__(self, name, make, model, year):
+        """Initialise"""
         super().__init__(name, make, model, year)
+        self.battery_size = 70
 
+    def describe_battery(self):
+        """Print a statement describing the battery percentage."""
+        print(f"This car {self.model} has a battery percentage of {self.battery_size}")
 
 
 car_1 = Car("John", "Honda", "Civic", '2013')
@@ -68,3 +73,4 @@ tesla.update_ode(15)
 tesla.odo_reading()
 tesla.increment_ode(23)
 tesla.odo_reading()
+tesla.describe_battery()
