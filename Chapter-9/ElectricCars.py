@@ -45,15 +45,15 @@ class ElectricCar(Car):
 
 
 
-car_1 = Car("Naveen", "Honda", "Civic", '2013')
-tesla = ElectricCar("Pavan", "Honda", "Accord", '2006')
+car_1 = Car("John", "Honda", "Civic", '2013')
+tesla = ElectricCar("Mark", "Honda", "Accord", '2006')
 # car_3 = Car("Venki", "Honda", "SUV", '2017')
 
 car_1.car_description()
 car_1.odo_reading()
 car_1.update_ode(20)
 car_1.odo_reading()
-car_1.increment_ode(-3)
+car_1.increment_ode(23)
 car_1.update_ode(15)
 car_1.odo_reading()
 car_1.increment_ode(23)
