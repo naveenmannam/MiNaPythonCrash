@@ -1,4 +1,4 @@
-""" Simple Restaurant Class """
+""" Simple Restaurant Class module"""
 
 
 class Restaurant():
@@ -51,14 +51,3 @@ class Icecream(Restaurant):
         print("Availble Ice cream flavors.")
         for i in self.flavors:
             print(i)
-
-
-restaurant_1 = Icecream("Michnaro", "Chinese")
-restaurant_1.describe_restaurant()
-restaurant_1.set_customer_served(23)
-restaurant_1.customers_served()
-restaurant_1.increment_customers(34)
-restaurant_1.customers_served()
-restaurant_1.increment_customers(4)
-restaurant_1.customers_served()
-restaurant_1.display_flavors()
